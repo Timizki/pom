@@ -3,14 +3,14 @@
 
 	<groupId>master-pom</groupId>
 	<artifactId>master-pom</artifactId>
-	<version>0.5.0</version>
+	<version>0.5.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>master-pom</name>
 	<scm>
 		<connection>scm:git:ssh://git@github.com/Timizki/pom.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/Timizki/pom.git</developerConnection>
-	  <tag>master-pom-0.5.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
