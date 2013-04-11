@@ -8,7 +8,10 @@
 	<packaging>pom</packaging>
 
 	<name>master-pom</name>
-
+	<scm>
+		<connection>scm:git:ssh://git@github.com/Timizki/pom.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/Timizki/pom.git</developerConnection>
+	</scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.framework.version>3.2.0.RELEASE</spring.framework.version>
@@ -75,6 +78,7 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
+					<encoding>UTF-8</encoding>
 				</configuration>
 				<version>2.3.2</version>
 			</plugin>
@@ -150,23 +154,18 @@
 					</reportPlugins>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh-external</artifactId>
+				<version>2.4</version>
+			</extension>
+		</extensions>
 	</build>
-	<!-- <reporting> -->
-	<!-- <plugins> -->
-	<!-- <plugin> -->
-	<!-- use mvn cobertura:cobertura to generate cobertura reports -->
-	<!-- <groupId>org.codehaus.mojo</groupId> -->
-	<!-- <artifactId>cobertura-maven-plugin</artifactId> -->
-	<!-- <version>2.5.2</version> -->
-	<!-- <configuration> -->
-	<!-- <encoding>UTF-8</encoding> -->
-	<!-- <formats> -->
-	<!-- <format>html</format> -->
-	<!-- <format>xml</format> -->
-	<!-- </formats> -->
-	<!-- </configuration> -->
-	<!-- </plugin> -->
-	<!-- </plugins> -->
-	<!-- </reporting> -->
 </project>
