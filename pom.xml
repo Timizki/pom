@@ -168,4 +168,10 @@
 			</extension>
 		</extensions>
 	</build>
+		<distributionManagement>
+		<repository>
+			<id>nas-release</id>
+			<url>scpexe://10.0.0.2:/var/repository/releases/</url>
+		</repository>
+	</distributionManagement>
 </project>
