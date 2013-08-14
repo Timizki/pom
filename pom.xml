@@ -171,7 +171,7 @@
 		<distributionManagement>
 		<repository>
 			<id>nas-release</id>
-			<url>scpexe://10.0.0.2:/var/repository/releases</url>
+			<url>scpexe://nas.vksn.koti:/media/repository/releases</url>
 		</repository>
 	</distributionManagement>
 </project>
