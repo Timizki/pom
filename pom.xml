@@ -3,7 +3,7 @@
 
 	<groupId>master-pom</groupId>
 	<artifactId>master-pom</artifactId>
-	<version>0.5.0</version>
+	<version>0.5.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>master-pom</name>
